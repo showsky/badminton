@@ -8,7 +8,7 @@ Last update time: 2015/07/05 #1
 * ***All use of string type***
 * Base pattern
 
-	```json
+	```
 {
    "status": success / fail,
    "errno": error No,
