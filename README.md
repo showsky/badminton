@@ -10,9 +10,9 @@ Last update time: 2015/07/05 #1
 
 	```json
 {
-   "status": [success / fail],
-   "errno": [error No],
-   "errmsg": [error Message]
+   "status": success / fail,
+   "errno": error No,
+   "errmsg": error Message
 }
 
 	```
@@ -27,7 +27,7 @@ Last update time: 2015/07/05 #1
 	|long|Y|-|longitude|
 	|disance|N|3000|unit: meter
 	
-	```json
+	```
 	{
    "status": "success",
    "errno": "",
@@ -77,7 +77,7 @@ Last update time: 2015/07/05 #1
 	|------|------|-----|----|
 	|id|Y|-|must numeric|
 	
-	```json
+	```
 	{
    "status": "success",
    "errno": "",
