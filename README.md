@@ -3,8 +3,8 @@ Badminton API Document
 
 Last update time: 2015/07/05 #1
 
-* Api base URL: **http://3tr.mooo.com/api**
-* Image base URL: **http://3tr.mooo.com/image**
+* Api base URL: **http://[domain name]/api**
+* Image base URL: **http://[domain name]/image**
 * ***All use of string type***
 * Base pattern
 
