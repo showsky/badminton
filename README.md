@@ -1,8 +1,6 @@
 Badminton API Document
 ===
 
-Last update time: 2015/07/05 #1
-
 * Api base URL: **http://[domain name]/api**
 * Image base URL: **http://[domain name]/image**
 * ***All use of string type***
@@ -20,12 +18,15 @@ Last update time: 2015/07/05 #1
 ## Place
 
 * **/place**
+	* GET
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
 	|lat|Y|-|latitude|
 	|long|Y|-|longitude|
 	|disance|N|3000|unit: meter
+	
+	* Response
 	
 	```
 	{
@@ -72,10 +73,13 @@ Last update time: 2015/07/05 #1
 	```
 
 * **/place/info/[id]**
+	* GET
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
 	|id|Y|-|must numeric|
+	
+	* Response
 	
 	```
 	{
@@ -124,19 +128,87 @@ Last update time: 2015/07/05 #1
 	```
 	
 * **/place/search**
+	* GET
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
 
 * **/place/add**
-
+	* POST
+	* image max limit 3, and must JPG type
+	* file upload key name must image1, image2, image3
+	
 	| name | require | default | explanation |
 	|------|------|-----|----|
+	|team_name|Y|-|-|
+	|team_comment|N|-|-|
+	|country|Y|-|-|
+	|city|Y|-|-|
+	|location|Y|-|-|
+	|address|Y|-|-|
+	|price_boy|Y|-|-|
+	|price_girl|Y|-|-|
+	|start_date|Y|-|1985-02-22|
+	|end_data|Y|-|1985-02-22|
+	|week|Y|-|-|
+	|start_time|Y|-|22:00:00|
+	|end_time|Y|-|19:00:00|
+	|degress|Y|-|-|
+	|people|Y|-|-|
+	|contact_name|Y|-|-|
+	|contact_email|Y|-|-|
+	|contact_phone|Y|-|-|
+	|device_space|Y|-|-|
+	|device_floor|Y|0|-|
+	|device\_ball\_brand|Y|0|-|
+	|device\_ball\_price|Y|0|-|
+	|device_light|Y|0|-|
+	|device_ac|Y|0|-|
+	|device_water|Y|0|-|
+	|device_bathroom|Y|0|-|
+	|lat|Y|-|-|
+	|long|Y|-|-|
+	
+	* Response
+	
+	```
+{
+		"status": "success",
+		"errno": "",
+		"errmsg": "",
+		"data": {
+			"place_id" => 12
+		}
+}
+	```
 
 * **/place/edit**
 
+	* POST
+
 	| name | require | explanation |
 	|------|------|-----|
+	
+	* Response
+
+	```
+	{
+	}
+	```
+	
+* **/place/delete/**
+
+	* POST
+
+	| name | require | explanation |
+	|------|------|-----|
+
+	* Response
+
+	```
+	{
+	}
+	```
 
 ## User
 
@@ -150,4 +222,6 @@ Last update time: 2015/07/05 #1
 |202|Illegal parameter|
 |203|Lack parameter|
 |204|Data null|
+|205|Insert place fail|
+|301|Upload image fail|
 |999|Not implement method|
