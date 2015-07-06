@@ -8,9 +8,10 @@ Badminton API Document
 
 	```
 {
-   "status": success / fail,
-   "errno": error No,
-   "errmsg": error Message
+		"status": [success or fail],
+		"errno": [error No],
+		"errmsg": [error Message],
+		"data": [data]
 }
 
 	```
@@ -22,9 +23,16 @@ Badminton API Document
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
+	|token|N|-|-|
 	|lat|Y|-|latitude|
 	|long|Y|-|longitude|
-	|disance|N|3000|unit: meter
+	|disance|N|3000|unit: meter|
+	
+	* Request
+
+	```
+	GET /place?lat=-1212.123123&long=123.5675675
+	```
 	
 	* Response
 	
@@ -77,7 +85,14 @@ Badminton API Document
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
+	|token|N|-|-|
 	|id|Y|-|must numeric|
+
+	* Request
+
+	```
+	GET /place/info/1
+	```
 	
 	* Response
 	
@@ -133,6 +148,18 @@ Badminton API Document
 	| name | require | default | explanation |
 	|------|------|-----|----|
 
+	* Request
+	
+	```
+	```
+
+	* Response
+
+	```
+	{
+	}
+	```
+
 * **/place/add**
 	* POST
 	* image max limit 3, and must JPG type
@@ -183,11 +210,15 @@ Badminton API Document
 	```
 
 * **/place/edit**
-
 	* POST
 
-	| name | require | explanation |
-	|------|------|-----|
+	| name | require | default | explanation |
+	|------|------|-----|----|
+	
+	* Request
+	
+	```
+	```
 	
 	* Response
 
@@ -197,11 +228,15 @@ Badminton API Document
 	```
 	
 * **/place/delete/**
-
 	* POST
 
-	| name | require | explanation |
-	|------|------|-----|
+	| name | require | default | explanation |
+	|------|------|-----|----|
+
+	* Request
+	
+	```
+	```
 
 	* Response
 
@@ -210,18 +245,185 @@ Badminton API Document
 	}
 	```
 
+## Image
+
+* **/image/fetch/[place id]**
+	* GET
+
+	| name | require | default | explanation |
+	|------|------|-----|----|
+	|place id|Y|-|-|
+	
+	* Request
+	
+	```
+	GET /image/detch/1
+	```
+	
+	* Response
+
+	```
+{
+		"status": "success",
+		"errno": "",
+		"errmsg": "",
+		"data" : [
+    		{
+      			"filename" : "cdd41435828345612aa43758797ebe83.jpg",
+      			"timestamp" : "1436180721"
+    		},
+    		{
+      			"filename" : "0c285cda7116b339d1093a73ef66e639.jpg",
+      			"timestamp" : "1436180797"
+    		},
+    		{
+      			"filename" : "ffc8c29ac64c5764da93ef0a6535fc34.jpg",
+      			"timestamp" : "1436180797"
+    		}
+  		]
+}
+	```
+	
+
+* **/image/upload/[place id]**
+	* POST
+
+	| name | require | default | explanation |
+	|------|------|-----|----|
+	|place id|Y|-|-|
+	
+	* Request
+
+	```
+	POST /image/upload/12
+	```
+
+	* Response
+
+	```
+{
+		"status": "success",
+		"errno": "",
+		"errmsg": "",
+		"data": {
+			"place_id" => 12
+		}
+}
+	```
+
+* **/image/delete/[filename]**
+	* GET
+
+	| name | require | default | explanation |
+	|------|------|-----|----|
+	|filename|Y|-|-|
+	
+	* Request
+
+	```
+	GET /image/delete/qwkldfjoqwjflqwjlf.jpg
+	```
+
+	* Response
+
+	```
+{
+		"status": "success",
+		"errno": "",
+		"errmsg": "",
+		"data": {
+			"filename" => "qwkldfjoqwjflqwjlf.jpg"
+		}
+}
+	```
+
 ## User
 
+* **/user/info/[phone number]**
+	* GET
+
+	| name | require | default | explanation |
+	|------|------|-----|----|
+
+	* Request
+	
+	```
+	```
+
+	* Response
+
+	```
+	{
+	}
+	```
+	
+* **/user/send/[phone number]**
+	* GET
+
+	| name | require | default | explanation |
+	|------|------|-----|----|
+
+	* Request
+	
+	```
+	```
+
+	* Response
+
+	```
+	{
+	}
+	```
+
+
+* **/user/bind**
+	* POST
+
+	| name | require | default | explanation |
+	|------|------|-----|----|
+
+	* Request
+	
+	```
+	```
+
+	* Response
+
+	```
+	{
+	}
+	```
+
 ## Ticket
+
+* **/ticket/sign/[place id]**
+	* POST
+
+	| name | require | default | explanation |
+	|------|------|-----|----|
+
+	* Request
+	
+	```
+	```
+
+	* Response
+
+	```
+	{
+	}
+	```
 
 ## Error No
 
 |No|Message|
 |----|----|
-|201|Not place id|
+|201|Not exist place id|
 |202|Illegal parameter|
 |203|Lack parameter|
 |204|Data null|
 |205|Insert place fail|
 |301|Upload image fail|
+|302|Image exceeds limit|
+|303|Not exist image filename|
 |999|Not implement method|
