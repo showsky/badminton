@@ -357,11 +357,12 @@ Badminton API Document
 	}
 	```
 	
-* **/user/send/[phone number]**
-	* GET
+* **/user/send**
+	* POST
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
+	|phone|Y|-|0123456789|
 
 	* Request
 	
@@ -381,6 +382,7 @@ Badminton API Document
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
+	|code|Y|-|-|
 
 	* Request
 	
@@ -418,12 +420,14 @@ Badminton API Document
 
 |No|Message|
 |----|----|
+|101|Lack parameter|
+|102|Data empty|
 |201|Not exist place id|
 |202|Illegal parameter|
-|203|Lack parameter|
-|204|Data null|
-|205|Insert place fail|
+|203|Insert place fail|
 |301|Upload image fail|
 |302|Image exceeds limit|
 |303|Not exist image filename|
+|401|Send SMS code fail|
+|402|Illegal code|
 |999|Not implement method|
