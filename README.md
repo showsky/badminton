@@ -339,7 +339,7 @@ Badminton API Document
 
 ## User
 
-* **/user/info/[phone number]**
+* **/user/info?token=[token]**
 	* GET
 
 	| name | require | default | explanation |
@@ -348,6 +348,7 @@ Badminton API Document
 	* Request
 	
 	```
+	GET /user/info?token=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
 	```
 
 	* Response
@@ -367,50 +368,101 @@ Badminton API Document
 	* Request
 	
 	```
+	GET /user/send
 	```
 
 	* Response
 
 	```
 	{
+		"status": "success,
+		"errno":"",
+		"errmsg:"",
+		"data": {
+			"phone": "123456789",
+		}
 	}
 	```
 
 
 * **/user/bind**
 	* POST
+	* Response token string length = 48
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
 	|code|Y|-|-|
+	|platform|Y|-|1:Android 2:iOS|
+	|token|Y|-|-|
 
 	* Request
 	
 	```
+	POST /user/bind
 	```
 
 	* Response
 
 	```
 	{
+		"status": "success",
+		"errno": "",
+		"errmsg": "",
+		"data": {
+			"token": "opqjdfoqpwjfwjkfnqw892y3rwejkrhwk",
+		}
 	}
 	```
 
 ## Ticket
 
-* **/ticket/sign/[place id]**
+* **/ticket/sign?token=[token]**
 	* POST
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
+	|place_id|Y|-|
+	|date|Y|-|-|
+	|count|Y|-|-|
+	|name|Y|-|-|
+	|token|Y|-|-|
 
 	* Request
 	
 	```
+	POST /ticket/sign?token=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
 	```
 
 	* Response
 
+	```
+	{
+		"status": "success",
+		"errno": "",
+		"errmsg": "",
+		"data": {
+			"place_id: "1",
+			"name": "Ted",
+			"count": "1",
+			"datetime": "2015-02-22"
+		}
+	}
+	```
+	
+* **/ticket/history?token=[token]**
+	* GET
+
+	| name | require | default | explanation |
+	|------|------|-----|----|
+	
+	* Request
+
+	```
+	GET /ticket/history?token=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
+	```
+	
+	* Response
+	
 	```
 	{
 	}
@@ -418,16 +470,50 @@ Badminton API Document
 
 ## Error No
 
-|No|Message|
-|----|----|
-|101|Lack parameter|
-|102|Data empty|
-|201|Not exist place id|
-|202|Illegal parameter|
-|203|Insert place fail|
-|301|Upload image fail|
-|302|Image exceeds limit|
-|303|Not exist image filename|
-|401|Send SMS code fail|
-|402|Illegal code|
-|999|Not implement method|
+* Basic Error 1xx
+
+	|No|Message|
+	|----|----|
+	|101|Lack parameter|
+	|102|Data empty|
+
+* Place Error 2xx
+
+	|No|Message|
+	|----|----|
+	|201|Not exist place id|
+	|202|Illegal parameter|
+	|203|Insert place fail|
+
+* Image Error 3xx
+
+	|No|Message|
+	|----|----|
+	|301|Upload image fail|
+	|302|Image exceeds limit|
+	|303|Not exist image filename|
+
+* User Error 4xx
+
+	|No|Message|
+	|----|----|
+	|401|Send SMS code fail|
+	|402|Illegal code|
+	|403|Insert user fail|
+	|404|Not exist phone|
+	|405|Illegal parameter|
+	
+* Ticket Error 5xx
+
+	|No|Message|
+	|----|----|
+
+* Other Error 9xx
+
+	|No|Message|
+	|----|----|
+	|999|Not implement method|
+
+## Author
+
+<p>name: Ting Cheng</p>
