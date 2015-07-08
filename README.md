@@ -338,28 +338,10 @@ Badminton API Document
 	```
 
 ## User
-
-* **/user/info?token=[token]**
-	* GET
-
-	| name | require | default | explanation |
-	|------|------|-----|----|
-
-	* Request
-	
-	```
-	GET /user/info?token=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
-	```
-
-	* Response
-
-	```
-	{
-	}
-	```
 	
 * **/user/send**
 	* POST
+	* phone number must 10 length and first char is 0
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
@@ -368,7 +350,7 @@ Badminton API Document
 	* Request
 	
 	```
-	GET /user/send
+	POST /user/send
 	```
 
 	* Response
@@ -387,7 +369,7 @@ Badminton API Document
 
 * **/user/bind**
 	* POST
-	* Response token string length = 48
+	* Response token string length = 40
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
@@ -410,6 +392,33 @@ Badminton API Document
 		"errmsg": "",
 		"data": {
 			"token": "opqjdfoqpwjfwjkfnqw892y3rwejkrhwk",
+		}
+	}
+	```
+	
+* **/user/check?token=[token]**
+	* GET
+	
+	| name | require | default | explanation |
+	|------|------|-----|----|
+	
+	* Request
+
+	```
+	GET /user/check?token=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
+	```
+	
+	* Response
+	
+	```
+	{
+		"status": "success",
+		"errno": "",
+		"errmsg": "",
+		"data": {
+			"id": "1",
+			"phone": "886123456789",
+			"token": "opqjdfoqpwjfwjkfnqw892y3rwejkrhwk"
 		}
 	}
 	```
@@ -500,8 +509,10 @@ Badminton API Document
 	|401|Send SMS code fail|
 	|402|Illegal code|
 	|403|Insert user fail|
-	|404|Not exist phone|
+	|404|Not exist phone number|
 	|405|Illegal parameter|
+	|406|Illegal phone number|
+	|407|Illegal token|
 	
 * Ticket Error 5xx
 
