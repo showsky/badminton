@@ -23,7 +23,6 @@ Badminton API Document
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
-	|token|N|-|-|
 	|lat|Y|-|latitude|
 	|long|Y|-|longitude|
 	|disance|N|3000|unit: meter|
@@ -85,7 +84,6 @@ Badminton API Document
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
-	|token|N|-|-|
 	|id|Y|-|must numeric|
 
 	* Request
@@ -369,7 +367,7 @@ Badminton API Document
 
 * **/user/bind**
 	* POST
-	* Response token string length = 40
+	* Response passcode string length = 40
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
@@ -391,12 +389,12 @@ Badminton API Document
 		"errno": "",
 		"errmsg": "",
 		"data": {
-			"token": "opqjdfoqpwjfwjkfnqw892y3rwejkrhwk",
+			"passcode": "opqjdfoqpwjfwjkfnqw892y3rwejkrhwk",
 		}
 	}
 	```
 	
-* **/user/check?token=[token]**
+* **/user/check?passcode=[passcode]**
 	* GET
 	
 	| name | require | default | explanation |
@@ -405,7 +403,7 @@ Badminton API Document
 	* Request
 
 	```
-	GET /user/check?token=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
+	GET /user/check?passcode=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
 	```
 	
 	* Response
@@ -418,14 +416,14 @@ Badminton API Document
 		"data": {
 			"id": "1",
 			"phone": "886123456789",
-			"token": "opqjdfoqpwjfwjkfnqw892y3rwejkrhwk"
+			"passcode": "opqjdfoqpwjfwjkfnqw892y3rwejkrhwk"
 		}
 	}
 	```
 
 ## Ticket
 
-* **/ticket/sign?token=[token]**
+* **/ticket/sign?passcode=[passcode]**
 	* POST
 
 	| name | require | default | explanation |
@@ -434,12 +432,11 @@ Badminton API Document
 	|date|Y|-|-|
 	|count|Y|-|-|
 	|name|Y|-|-|
-	|token|Y|-|-|
 
 	* Request
 	
 	```
-	POST /ticket/sign?token=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
+	POST /ticket/sign?passcode=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
 	```
 
 	* Response
@@ -458,7 +455,7 @@ Badminton API Document
 	}
 	```
 	
-* **/ticket/history?token=[token]**
+* **/ticket/history?passcode=[passcode]**
 	* GET
 
 	| name | require | default | explanation |
@@ -467,7 +464,7 @@ Badminton API Document
 	* Request
 
 	```
-	GET /ticket/history?token=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
+	GET /ticket/history?passcode=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
 	```
 	
 	* Response
