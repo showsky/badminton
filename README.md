@@ -309,8 +309,8 @@ Badminton API Document
 }
 	```
 
-* **/image/delete/[filename]**
-	* GET
+* **/image/delete**
+	* POST
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
@@ -319,7 +319,7 @@ Badminton API Document
 	* Request
 
 	```
-	GET /image/delete/qwkldfjoqwjflqwjlf.jpg
+	POST /image/delet
 	```
 
 	* Response
