@@ -373,7 +373,7 @@ Badminton API Document
 	|------|------|-----|----|
 	|code|Y|-|-|
 	|platform|Y|-|1:Android 2:iOS|
-	|token|Y|-|-|
+	|token|Y|-|GCM token|
 
 	* Request
 	
