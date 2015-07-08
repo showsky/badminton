@@ -161,6 +161,7 @@ Badminton API Document
 * **/place/add**
 	* POST
 	* image max limit 3, and must JPG type
+	* image size limit 300kb
 	* file upload key name must image1, image2, image3
 	
 	| name | require | default | explanation |
@@ -285,6 +286,9 @@ Badminton API Document
 
 * **/image/upload/[place id]**
 	* POST
+	* image max limit 3, and must JPG type
+	* image size limit 300kb
+	* file upload key name must image1, image2, image3
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
