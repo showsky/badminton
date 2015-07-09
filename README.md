@@ -25,13 +25,13 @@ Badminton API Document
 	| name | require | default | explanation |
 	|------|------|-----|----|
 	|lat|Y|-|latitude|
-	|long|Y|-|longitude|
+	|lon|Y|-|longitude|
 	|disance|N|3000|unit: meter|
 	
 	* Request
 
 	```
-	GET /place?lat=-1212.123123&long=123.5675675
+	GET /place?lat=-1212.123123&lon=123.5675675
 	```
 	
 	* Response
