@@ -210,7 +210,7 @@ Badminton API Document
 	|device_water|Y|0|-|
 	|device_bathroom|Y|0|-|
 	|lat|Y|-|-|
-	|long|Y|-|-|
+	|lon|Y|-|-|
 	
 	* Response
 	
