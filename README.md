@@ -2,7 +2,7 @@ Badminton API Document
 ===
 
 * Api base URL: **http://[domain name]/api**
-* Image base URL: **http://[domain name]/image**
+* Image base URL: **http://[domain name]/images**
 * ***All use of string type***
 * Base pattern
 
