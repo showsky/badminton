@@ -20,6 +20,7 @@ Badminton API Document
 
 * **/place**
 	* GET
+	* result data end_date before
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
@@ -79,8 +80,9 @@ Badminton API Document
 	
 	```
 
-* **/place/info/[id]**
+* **/place/fetch/[id]**
 	* GET
+	* sing_date range within a month
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
@@ -96,48 +98,66 @@ Badminton API Document
 	
 	```
 	{
-   "status": "success",
-   "errno": "",
-   "errmsg": "",
-   "data": {
-      "id": "1",
-      "team_name": "欣動羽球社",
-      "team_comment": "歡迎初級到中上,會有一面場開放給初學者打",
-      "country": "台灣",
-      "city": "台北",
-      "location": "東門國小",
-      "address": "台北市中正區仁愛路一段2之4號",
-      "price_boy": "200",
-      "price_girl": "200",
-      "start_date": "0007-01-15",
-      "end_date": "0007-01-16",
-      "week": "1",
-      "start_time": "19:00:00",
-      "end_time": "21:30:00",
-      "degree": "1,3",
-      "people": "13",
-      "contact_name": "hsin",
-      "contact_email": "hsin7377",
-      "contact_phone": "0989818737",
-      "device_space": "1",
-      "device_floor": "1",
-      "device_ball_brand": "10",
-      "device_ball_price": "2",
-      "device_light": "0",
-      "device_ac": "0",
-      "device_water": "0",
-      "device_bathroom": "0",
-      "update_time": "0000-00-00 00:00:00",
-      "latitude": "0.0",
-      "longitude": "0.0",
-      "disance": "1399",
-      "image": [
-         "/demo1.jpg?1436032389",
-         "/demo2.jpg?1436032389",
-         "/demo3.jpg?1436032389"
-      ]
-   }
-}
+	    "status": "success",
+	    "errno": "",
+	    "errmsg": "",
+	    "data": {
+	        "id": "1",
+	        "team_name": "欣動羽球社",
+	        "team_comment": "歡迎初級到中上,會有一面場開放給初學者打",
+	        "country": "台灣",
+	        "city": "台北",
+	        "location": "東門國小",
+	        "address": "台北市中正區仁愛路一段2之4號",
+	        "price_boy": "200",
+	        "price_girl": "200",
+	        "start_date": "2015-01-01",
+	        "end_date": "2015-12-31",
+	        "week": "1",
+	        "start_time": "19:00:00",
+	        "end_time": "21:30:00",
+	        "degree": "1,3",
+	        "people": "13",
+	        "contact_name": "hsin",
+	        "contact_email": "hsin7377",
+	        "contact_phone": "0989818737",
+	        "device_space": "1",
+	        "device_floor": "1",
+	        "device_ball_brand": "10",
+	        "device_ball_price": "2",
+	        "device_light": "0",
+	        "device_ac": "0",
+	        "device_water": "0",
+	        "device_bathroom": "0",
+	        "lat": "0.000000",
+	        "long": "0.000000",
+	        "update_time": "2015-07-09 19:22:51",
+	        "images": [
+	            {
+	                "filename": "cec6c4fdf0ebb6bddcb9387775571d9f.jpg",
+	                "timestamp": "1436336651"
+	            }
+	        ],
+	        "sign_date": [
+	            {
+	                "date": "2015-07-13",
+	                "people": 0
+	            },
+	            {
+	                "date": "2015-07-20",
+	                "people": 0
+	            },
+	            {
+	                "date": "2015-07-27",
+	                "people": 0
+	            },
+	            {
+	                "date": "2015-08-03",
+	                "people": 0
+	            }
+	        ]
+	    }
+	}
 	```
 	
 * **/place/search**
@@ -371,7 +391,7 @@ Badminton API Document
 
 * **/user/bind**
 	* POST
-	* Response passcode string length = 40
+	* passcode string length = 40
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
