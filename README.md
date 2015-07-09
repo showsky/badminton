@@ -180,9 +180,6 @@ Badminton API Document
 
 * **/place/add**
 	* POST
-	* image max limit 3, and must JPG type
-	* image size limit 300kb
-	* file upload key name must image1, image2, image3
 	
 	| name | require | default | explanation |
 	|------|------|-----|----|
@@ -343,7 +340,7 @@ Badminton API Document
 	* Request
 
 	```
-	POST /image/delet
+	POST /image/delete
 	```
 
 	* Response
@@ -418,6 +415,33 @@ Badminton API Document
 	}
 	```
 	
+* **/user/update?passcode=[passcode]**
+	* POST
+
+	| name | require | default | explanation |
+	|------|------|-----|----|
+	|platform|Y|-|1:Android 2:iOS|
+	|token|Y|-|GCM token|
+	
+	* Request
+	
+	```
+	POST /user/update?passcode=opqjdfoqpwjfwjkfnqw892y3rwejkrhwk
+	```
+	
+	* Response
+
+	```
+	{
+		"status": "success",
+		"errno": "",
+		"errmsg": "",
+		"data": {
+			"token": "qwqwqwqwqwqwqwqwqwqwqwqwqwqwqwqq"
+		}
+	}
+	```
+	
 * **/user/check?passcode=[passcode]**
 	* GET
 	
@@ -454,8 +478,9 @@ Badminton API Document
 	|------|------|-----|----|
 	|place_id|Y|-|
 	|date|Y|-|-|
-	|count|Y|-|-|
+	|people|Y|-|-|
 	|name|Y|-|-|
+	|email|Y|-|-|
 
 	* Request
 	
@@ -473,7 +498,8 @@ Badminton API Document
 		"data": {
 			"place_id: "1",
 			"name": "Ted",
-			"count": "1",
+			"email" "ted@xxx.xxx.tw",
+			"people": "1",
 			"datetime": "2015-02-22"
 		}
 	}
@@ -528,12 +554,12 @@ Badminton API Document
 	|No|Message|
 	|----|----|
 	|401|Send SMS code fail|
-	|402|Illegal code|
+	|402|Illegal passcode|
 	|403|Insert user fail|
 	|404|Not exist phone number|
 	|405|Illegal parameter|
 	|406|Illegal phone number|
-	|407|Illegal token|
+	|407|Update token fail|
 	
 * Ticket Error 5xx
 
