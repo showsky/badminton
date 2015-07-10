@@ -3,8 +3,8 @@ Badminton API Document
 
 * Api base URL: **http://[domain name]/api**
 * Image base URL: **http://[domain name]/images**
-* ***All use of string type***
-* Base pattern
+* ***All response JSON format use of string type***
+* Base rsponse JSON pattern
 
 	```
 {
