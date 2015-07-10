@@ -496,11 +496,16 @@ Badminton API Document
 		"errno": "",
 		"errmsg": "",
 		"data": {
-			"place_id: "1",
+			"ticket_id: "1",
+			"location": "東門國小",
+        	"address": "台北市中正區仁愛路一段2之4號",
+			"contact_name": "hsin",
+        	"contact_email": "hsin7377",
+        	"contact_phone": "0989818737"
+        	"date": "2015-02-22",
 			"name": "Ted",
 			"email" "ted@xxx.xxx.tw",
 			"people": "1",
-			"datetime": "2015-02-22"
 		}
 	}
 	```
@@ -565,6 +570,9 @@ Badminton API Document
 
 	|No|Message|
 	|----|----|
+	|501|Not exist date|
+	|502|People exceeds limit|
+	|503|Insert ticket fail|
 
 * Other Error 9xx
 
