@@ -361,6 +361,8 @@ Badminton API Document
 * **/user/send**
 	* POST
 	* phone number must 10 length and first char is 0
+	* Inspect send sms ip daily max 50
+	* inspect send sms phone daily max 10
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
@@ -565,6 +567,8 @@ Badminton API Document
 	|405|Illegal parameter|
 	|406|Illegal phone number|
 	|407|Update token fail|
+	|408|SMS send ip exceeds limit|
+	|409|SMS send phone exceeds limit|
 	
 * Ticket Error 5xx
 
