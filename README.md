@@ -48,10 +48,12 @@ Badminton API Document
          "city": "台北",
          "location": "東門國小",
          "address": "台北市中正區仁愛路一段2之4號",
-         "update_time": "0000-00-00 00:00:00",
          "latitude": "0.0",
          "longitude": "0.0",
-         "disance": "1861"
+         "disance": "1861",
+         "update_time": "0000-00-00 00:00:00",
+         "image_filename": "lkfjwljfljlfj.jpg",
+         "image_timestamp": "11283812691"
       },
       {
          "id": "2",
@@ -59,10 +61,12 @@ Badminton API Document
          "city": "台北",
          "location": "興雅國小",
          "address": "台北市基隆路一段83巷",
-         "update_time": "0000-00-00 00:00:00",
          "latitude": "0.0",
          "longitude": "0.0",
-         "disance": "2960"
+         "disance": "2960",
+         "update_time": "0000-00-00 00:00:00",
+         "image_filename": "lkfjwljfljlfj.jpg",
+         "image_timestamp": "11283812691"
       },
       {
          "id": "3",
@@ -70,10 +74,12 @@ Badminton API Document
          "city": "台北",
          "location": "銘傳國小四樓羽球場",
          "address": "台北市大安區羅斯福路四段21號",
-         "update_time": "0000-00-00 00:00:00",
          "latitude": "0.0",
          "longitude": "0.0",
-         "disance": "1614"
+         "disance": "1614",
+         "update_time": "0000-00-00 00:00:00",
+         "image_filename": "lkfjwljfljlfj.jpg",
+         "image_timestamp": "11283812691"
       }
    ]
 }
@@ -118,9 +124,6 @@ Badminton API Document
 	        "end_time": "21:30:00",
 	        "degree": "1,3",
 	        "people": "13",
-	        "contact_name": "hsin",
-	        "contact_email": "hsin7377",
-	        "contact_phone": "0989818737",
 	        "device_space": "1",
 	        "device_floor": "1",
 	        "device_ball_brand": "10",
