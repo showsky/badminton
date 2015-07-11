@@ -517,6 +517,7 @@ Badminton API Document
 	
 * **/ticket/history?passcode=[passcode]**
 	* GET
+	* sory by update_time DESC and status DESC
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
@@ -531,6 +532,38 @@ Badminton API Document
 	
 	```
 	{
+	   "status": "success",
+	   "errno": "",
+	   "errmsg": "",
+	   "data": [
+	      {
+	         "id": "9",
+	         "people": "1",
+	         "date": "2015-07-13",
+	         "status": "1",		// 1: success 2: comfirm
+	         "name": "jasonni",
+	         "email": "jasonni1231@gmail.com",
+	         "update_time": "2015-07-11 17:24:15"
+	      },
+	      {
+	         "id": "8",
+	         "people": "1",
+	         "date": "2015-07-13",
+	         "status": "1",
+	         "name": "jasonni",
+	         "email": "jasonni1231@gmail.com",
+	         "update_time": "2015-07-11 17:17:08"
+	      },
+	      {
+	         "id": "5",
+	         "people": "1",
+	         "date": "2015-07-13",
+	         "status": "1",
+	         "name": "Ting",
+	         "email": "showsky@gmail.com",
+	         "update_time": "2015-07-11 01:05:00"
+	      }
+	   ]
 	}
 	```
 
