@@ -540,10 +540,13 @@ Badminton API Document
 	         "id": "9",
 	         "people": "1",
 	         "date": "2015-07-13",
-	         "status": "1",		// 1: success 2: comfirm
+	         "status": "1",		// 1: comfirm 2: success 3: fail
 	         "name": "jasonni",
 	         "email": "jasonni1231@gmail.com",
-	         "update_time": "2015-07-11 17:24:15"
+	         "update_time": "2015-07-11 17:24:15",
+	         "contact_name": "hsin",
+	         "contact_email": "hsin7377",
+	         "contact_phone": "0989818737"
 	      },
 	      {
 	         "id": "8",
@@ -552,7 +555,10 @@ Badminton API Document
 	         "status": "1",
 	         "name": "jasonni",
 	         "email": "jasonni1231@gmail.com",
-	         "update_time": "2015-07-11 17:17:08"
+	         "update_time": "2015-07-11 17:17:08",
+	         "contact_name": "hsin",
+	         "contact_email": "hsin7377",
+	         "contact_phone": "0989818737"
 	      },
 	      {
 	         "id": "5",
@@ -561,7 +567,10 @@ Badminton API Document
 	         "status": "1",
 	         "name": "Ting",
 	         "email": "showsky@gmail.com",
-	         "update_time": "2015-07-11 01:05:00"
+	         "update_time": "2015-07-11 01:05:00",
+	         "contact_name": "hsin",
+	         "contact_email": "hsin7377",
+	         "contact_phone": "0989818737"
 	      }
 	   ]
 	}
@@ -605,6 +614,8 @@ Badminton API Document
 	|407|Update token fail|
 	|408|SMS send ip exceeds limit|
 	|409|SMS send phone exceeds limit|
+	|410|Illegal code|
+	|411|Insert SMS fail|
 	
 * Ticket Error 5xx
 
@@ -613,6 +624,7 @@ Badminton API Document
 	|501|Not exist date|
 	|502|People exceeds limit|
 	|503|Insert ticket fail|
+	|504|Illegal code|
 
 * Other Error 9xx
 
