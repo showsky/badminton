@@ -394,6 +394,7 @@ Badminton API Document
 * **/user/bind**
 	* POST
 	* passcode string length = 40
+	* the code only bind only once
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
@@ -514,7 +515,7 @@ Badminton API Document
 		}
 	}
 	```
-	
+
 * **/ticket/history?passcode=[passcode]**
 	* GET
 	* sory by update_time DESC and status DESC
@@ -576,6 +577,68 @@ Badminton API Document
 	}
 	```
 
+* **/ticket/check?code=[code]
+	* GET
+	
+	| name | require | default | explanation |
+	|------|------|-----|----|
+	|code|Y|-|-|
+	
+	* Request
+	
+	```
+	GET /ticket/check?code=JOEkdw
+	```
+	
+	* Response
+
+	```
+	{
+	   "status": "success",
+	   "errno": "",
+	   "errmsg": "",
+	   "data": {
+	      "place_id": "1",
+	      "people": "3",
+	      "date": "2015-07-13",
+	      "name": "Ting",
+	      "email": "Ted@gmail.com",
+	      "update_time": "2015-07-12 21:25:51",
+	      "sign_people": "3",
+	      "total_people": "13"
+	   }
+	}
+	```
+* **/ticket/confirm?code=[code]
+	* POST
+	* the code only bind only once
+	
+	| name | require | default | explanation |
+	|------|------|-----|----|
+	|code|Y|-|-|-|
+	|ticket_id|-|-|-|
+	|status|-|-|1: Yest 2: No|
+	
+	* Request
+
+	```
+	POST /ticket/confirm?code=JOEkdw
+	```
+	
+	* Response
+
+	```
+	{
+		"status": "success",
+		"errno": "",
+		"errmsg": "",
+		"data": {
+			"ticket_id': "2"
+		}
+	}
+	```
+
+
 ## Error No
 
 * Basic Error 1xx
@@ -625,6 +688,7 @@ Badminton API Document
 	|502|People exceeds limit|
 	|503|Insert ticket fail|
 	|504|Illegal code|
+	|505|Illegal parameter|
 
 * Other Error 9xx
 
