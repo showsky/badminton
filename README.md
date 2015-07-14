@@ -26,7 +26,8 @@ Badminton API Document
 	|------|------|-----|----|
 	|lat|Y|-|latitude|
 	|lon|Y|-|longitude|
-	|disance|N|3000|unit: meter|
+	|distance|N|3000|unit: meter|
+	|order|N|-|distance ASC|
 	
 	* Request
 
@@ -50,10 +51,10 @@ Badminton API Document
          "address": "台北市中正區仁愛路一段2之4號",
          "latitude": "0.0",
          "longitude": "0.0",
-         "disance": "1861",
          "update_time": "0000-00-00 00:00:00",
          "image_filename": "lkfjwljfljlfj.jpg",
-         "image_timestamp": "11283812691"
+         "image_timestamp": "11283812691",
+         "disance": "1861"
       },
       {
          "id": "2",
@@ -63,10 +64,10 @@ Badminton API Document
          "address": "台北市基隆路一段83巷",
          "latitude": "0.0",
          "longitude": "0.0",
-         "disance": "2960",
          "update_time": "0000-00-00 00:00:00",
          "image_filename": "lkfjwljfljlfj.jpg",
-         "image_timestamp": "11283812691"
+         "image_timestamp": "11283812691",
+         "disance": "1861"
       },
       {
          "id": "3",
@@ -76,10 +77,10 @@ Badminton API Document
          "address": "台北市大安區羅斯福路四段21號",
          "latitude": "0.0",
          "longitude": "0.0",
-         "disance": "1614",
          "update_time": "0000-00-00 00:00:00",
          "image_filename": "lkfjwljfljlfj.jpg",
-         "image_timestamp": "11283812691"
+         "image_timestamp": "11283812691",
+         "disance": "1861"
       }
    ]
 }
