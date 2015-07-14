@@ -690,6 +690,7 @@ Badminton API Document
 	|503|Insert ticket fail|
 	|504|Illegal code|
 	|505|Illegal parameter|
+	|506|Fail ticket has closed|
 
 * Other Error 9xx
 
