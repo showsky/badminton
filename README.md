@@ -27,7 +27,7 @@ Badminton API Document
 	|lat|Y|-|latitude|
 	|lon|Y|-|longitude|
 	|distance|N|3000|unit: meter|
-	|order|N|-|distance ASC|
+	|order|N|-|distance, date|
 	
 	* Request
 
@@ -54,7 +54,8 @@ Badminton API Document
          "update_time": "0000-00-00 00:00:00",
          "image_filename": "lkfjwljfljlfj.jpg",
          "image_timestamp": "11283812691",
-         "disance": "1861"
+         "disance": "1861",
+         "date": "2015-05-06"
       },
       {
          "id": "2",
@@ -67,7 +68,8 @@ Badminton API Document
          "update_time": "0000-00-00 00:00:00",
          "image_filename": "lkfjwljfljlfj.jpg",
          "image_timestamp": "11283812691",
-         "disance": "1861"
+         "disance": "1861",
+         "date": "2015-05-06"
       },
       {
          "id": "3",
@@ -80,7 +82,8 @@ Badminton API Document
          "update_time": "0000-00-00 00:00:00",
          "image_filename": "lkfjwljfljlfj.jpg",
          "image_timestamp": "11283812691",
-         "disance": "1861"
+         "disance": "1861",
+         "date": "2015-05-06"
       }
    ]
 }
