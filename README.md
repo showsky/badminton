@@ -609,7 +609,12 @@ Badminton API Document
 	      "email": "Ted@gmail.com",
 	      "update_time": "2015-07-12 21:25:51",
 	      "sign_people": "3",
-	      "total_people": "13"
+	      "total_people": "13",
+	      "contact_name": "Ted",
+	      "start_time": "13:00:00",
+	      "end_time": "15:00:00",
+	      "image_filename": "wwsofjweiofjw.jpg",
+	      "image_timestamp": "1947891234789236847"
 	   }
 	}
 	```
