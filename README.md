@@ -602,6 +602,8 @@ Badminton API Document
 	   "errno": "",
 	   "errmsg": "",
 	   "data": {
+	      "user_id": "2",
+	      "ticket_id": "6",
 	      "place_id": "1",
 	      "people": "3",
 	      "date": "2015-07-13",
