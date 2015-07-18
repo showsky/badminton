@@ -15,6 +15,7 @@ Badminton API Document
 }
 
 	```
+* Use memcached image and ticket and user data 
 
 ## Place
 
@@ -627,8 +628,8 @@ Badminton API Document
 	| name | require | default | explanation |
 	|------|------|-----|----|
 	|code|Y|-|-|-|
-	|ticket_id|-|-|-|
-	|status|-|-|1: Yest 2: No|
+	|ticket_id|Y|-|-|
+	|status|Y|-|1: Yest 2: No|
 	
 	* Request
 
