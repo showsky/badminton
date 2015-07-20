@@ -491,7 +491,7 @@ Badminton API Document
 	|date|Y|-|-|
 	|people|Y|-|-|
 	|name|Y|-|-|
-	|email|Y|-|-|
+	|email|N|-|-|
 
 	* Request
 	
