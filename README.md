@@ -612,6 +612,7 @@ Badminton API Document
 	      "email": "Ted@gmail.com",
 	      "update_time": "2015-07-12 21:25:51",
 	      "sign_people": "3",
+	      "team_name": "xxx",
 	      "total_people": "13",
 	      "contact_name": "Ted",
 	      "start_time": "13:00:00",
