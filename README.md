@@ -28,7 +28,7 @@ Badminton API Document
 	|lat|Y|-|latitude|
 	|lon|Y|-|longitude|
 	|distance|N|3000|unit: meter|
-	|order|N|-|distance, date|
+	|order|N|-|distance, date|can OR use|
 	
 	* Request
 
@@ -191,32 +191,32 @@ Badminton API Document
 	
 	| name | require | default | explanation |
 	|------|------|-----|----|
-	|team_name|Y|-|-|
-	|team_comment|N|-|-|
-	|country|Y|-|-|
-	|city|Y|-|-|
-	|location|Y|-|-|
-	|address|Y|-|-|
-	|price_boy|Y|-|-|
-	|price_girl|Y|-|-|
+	|team_name|Y|-|團隊名稱|
+	|team_comment|N|-|團隊說明|
+	|country|Y|-|國家|
+	|city|Y|-|城市|
+	|location|Y|-|地標|
+	|address|Y|-|地址|
+	|price_boy|Y|-|男生價錢|
+	|price_girl|Y|-|女生價錢|
 	|start_date|Y|-|1985-02-22|
 	|end_data|Y|-|1985-02-22|
-	|week|Y|-|-|
+	|week|Y|-|1 2 3 4 5 6 7|
 	|start_time|Y|-|22:00:00|
 	|end_time|Y|-|19:00:00|
-	|degress|Y|-|-|
-	|people|Y|-|-|
-	|contact_name|Y|-|-|
-	|contact_email|Y|-|-|
-	|contact_phone|Y|-|-|
-	|device_space|Y|-|-|
-	|device_floor|Y|0|-|
-	|device\_ball\_brand|Y|0|-|
-	|device\_ball\_price|Y|0|-|
-	|device_light|Y|0|-|
-	|device_ac|Y|0|-|
-	|device_water|Y|0|-|
-	|device_bathroom|Y|0|-|
+	|degress|Y|-|1. 初級 2. 中下級 3. 中等 4. 中級 5. 高級|
+	|people|Y|-|人數|
+	|contact_name|Y|-|聯絡姓名|
+	|contact_email|Y|-|聯絡信箱|
+	|contact_phone|Y|-|聯絡電話|
+	|device_space|Y|-|場地數|
+	|device_floor|Y|0|1. 木板 2. PU 3. 其他|
+	|device\_ball\_brand|Y|0|1.勝利 2.YY 3.超勝 4.MMOA 5.Bonny 6.久奈司 7.桑瑪氏   8.超力  9.其他|
+	|device\_ball\_price|Y|0|1.300-350 2.350-400 3.400-450 4.450-500 5.500以上|
+	|device_light|Y|0|1. 頂燈 2. 側燈|
+	|device_ac|Y|0|1. 有 2. 無|
+	|device_water|Y|0|1. 有 2. 無|
+	|device_bathroom|Y|0|1. 有 2. 無|
 	|lat|Y|-|-|
 	|lon|Y|-|-|
 	
