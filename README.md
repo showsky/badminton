@@ -611,6 +611,8 @@ Badminton API Document
 	      "name": "Ting",
 	      "email": "Ted@gmail.com",
 	      "update_time": "2015-07-12 21:25:51",
+	      "location": "東門國小",
+	      "address": "台北市中正區仁愛路一段2之4號"
 	      "sign_people": "3",
 	      "team_name": "xxx",
 	      "total_people": "13",
