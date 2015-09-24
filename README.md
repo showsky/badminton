@@ -550,6 +550,7 @@ Badminton API Document
 	         "name": "jasonni",
 	         "email": "jasonni1231@gmail.com",
 	         "update_time": "2015-07-11 17:24:15",
+	         "create_time": "2015-07-11 17:24:15",
 	         "contact_name": "hsin",
 	         "contact_email": "hsin7377",
 	         "contact_phone": "0989818737"
@@ -562,6 +563,7 @@ Badminton API Document
 	         "name": "jasonni",
 	         "email": "jasonni1231@gmail.com",
 	         "update_time": "2015-07-11 17:17:08",
+	         "create_time": "2015-07-11 17:24:15",
 	         "contact_name": "hsin",
 	         "contact_email": "hsin7377",
 	         "contact_phone": "0989818737"
@@ -574,6 +576,7 @@ Badminton API Document
 	         "name": "Ting",
 	         "email": "showsky@gmail.com",
 	         "update_time": "2015-07-11 01:05:00",
+	         "create_time": "2015-07-11 17:24:15",
 	         "contact_name": "hsin",
 	         "contact_email": "hsin7377",
 	         "contact_phone": "0989818737"
