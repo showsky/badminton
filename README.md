@@ -203,15 +203,15 @@ Badminton API Document
 	|price_girl|Y|-|女生價錢|
 	|start_date|Y|-|1985-02-22|
 	|end_data|Y|-|1985-02-22|
-	|week|Y|-|1 2 3 4 5 6 7|
+	|week|Y|0|1 2 3 4 5 6 7|
 	|start_time|Y|-|22:00:00|
 	|end_time|Y|-|19:00:00|
-	|degress|Y|-|1. 初級 2. 中下級 3. 中等 4. 中級 5. 高級|
-	|people|Y|-|人數|
+	|degress|Y|-|1. 初級 2. 中下級 3. 中等 4. 中上 5. 高級|
+	|people|Y|0|人數|
 	|contact_name|Y|-|聯絡姓名|
 	|contact_email|Y|-|聯絡信箱|
 	|contact_phone|Y|-|聯絡電話|
-	|device_space|Y|-|場地數|
+	|device_space|Y|0|場地數|
 	|device_floor|Y|0|1. 木板 2. PU 3. 其他|
 	|device\_ball\_brand|Y|0|1.勝利 2.YY 3.超勝 4.MMOA 5.Bonny 6.久奈司 7.桑瑪氏   8.超力  9.其他|
 	|device\_ball\_price|Y|0|1.300-350 2.350-400 3.400-450 4.450-500 5.500以上|
@@ -668,6 +668,7 @@ Badminton API Document
 	|----|----|
 	|101|Lack parameter|
 	|102|Data empty|
+	|103|Illegal account|
 
 * Place Error 2xx
 
@@ -676,6 +677,7 @@ Badminton API Document
 	|201|Not exist place id|
 	|202|Illegal parameter|
 	|203|Insert place fail|
+	|204|Illegal date|
 
 * Image Error 3xx
 
@@ -711,6 +713,7 @@ Badminton API Document
 	|504|Illegal code|
 	|505|Illegal parameter|
 	|506|Fail ticket has closed|
+	|507|time expire|
 
 * Other Error 9xx
 
