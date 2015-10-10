@@ -29,6 +29,8 @@ Badminton API Document
 	|lon|Y|-|longitude|
 	|distance|N|3000|unit: meter|
 	|order|N|-|distance, date|can OR use|
+	|p|N|-|page|
+	|c|N|-|count|
 	
 	* Request
 
@@ -527,6 +529,7 @@ Badminton API Document
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
+	
 	
 	* Request
 
