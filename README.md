@@ -554,9 +554,10 @@ Badminton API Document
 	         "email": "jasonni1231@gmail.com",
 	         "update_time": "2015-07-11 17:24:15",
 	         "create_time": "2015-07-11 17:24:15",
-	         "contact_name": "hsin",
-	         "contact_email": "hsin7377",
-	         "contact_phone": "0989818737"
+	         "team_name": "欣動羽球社",
+	         "location": "東門國小",
+	         "start_time": "19:00:00",
+	         "end_time": "21:30:00"
 	      },
 	      {
 	         "id": "8",
@@ -567,9 +568,10 @@ Badminton API Document
 	         "email": "jasonni1231@gmail.com",
 	         "update_time": "2015-07-11 17:17:08",
 	         "create_time": "2015-07-11 17:24:15",
-	         "contact_name": "hsin",
-	         "contact_email": "hsin7377",
-	         "contact_phone": "0989818737"
+	         "team_name": "欣動羽球社",
+	         "location": "東門國小",
+	         "start_time": "19:00:00",
+	         "end_time": "21:30:00"
 	      },
 	      {
 	         "id": "5",
@@ -580,9 +582,10 @@ Badminton API Document
 	         "email": "showsky@gmail.com",
 	         "update_time": "2015-07-11 01:05:00",
 	         "create_time": "2015-07-11 17:24:15",
-	         "contact_name": "hsin",
-	         "contact_email": "hsin7377",
-	         "contact_phone": "0989818737"
+	         "team_name": "欣動羽球社",
+	         "location": "東門國小",
+	         "start_time": "19:00:00",
+	         "end_time": "21:30:00"
 	      }
 	   ]
 	}
