@@ -1,9 +1,10 @@
 Badminton API Document
 ===
 
-* Api base URL: **http://[domain name]/api**
-* Image base URL: **http://[domain name]/images**
+* Api base URL: **https://[domain name]/api**
+* Image base URL: **https://[domain name]/images**
 * ***All response JSON format use of string type***
+* Support HTTP compression
 * Base rsponse JSON pattern
 
 	```
