@@ -1,5 +1,3 @@
-I:
-
 Badminton API Document
 ===
 
