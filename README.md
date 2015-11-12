@@ -413,6 +413,8 @@ Badminton API Document
 	| name | require | default | explanation |
 	|------|------|-----|----|
 	|code|Y|-|-|
+	|name|Y|-|user name|
+	|email|N|-|-|
 	|platform|Y|-|1:Android 2:iOS|
 	|token|Y|-|GCM token|
 
@@ -499,8 +501,6 @@ Badminton API Document
 	|place_id|Y|-|
 	|date|Y|-|-|
 	|people|Y|-|-|
-	|name|Y|-|-|
-	|email|N|-|-|
 
 	* Request
 	
@@ -721,6 +721,7 @@ Badminton API Document
 	|409|SMS send phone exceeds limit|
 	|410|Illegal code|
 	|411|Insert SMS fail|
+	|412|Illegal email address|
 	
 * Ticket Error 5xx
 
