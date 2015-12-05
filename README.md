@@ -1,6 +1,8 @@
 Badminton API Document
 ===
 
+[![Join the chat at https://gitter.im/showsky/3tr](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/showsky/3tr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 * Api base URL: **https://[domain name]/api**
 * Image base URL: **https://[domain name]/images**
 * ***All response JSON format use of string type***
