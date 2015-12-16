@@ -57,7 +57,7 @@ Badminton API Document
          "longitude": "0.0",
          "update_time": "0000-00-00 00:00:00",
          "start_time": "19:50:00",
-         "end_time": "21:50:00",
+         "end_time": "21:50:00",
          "image_filename": "lkfjwljfljlfj.jpg",
          "image_timestamp": "11283812691",
          "disance": "1861",
@@ -73,7 +73,7 @@ Badminton API Document
          "longitude": "0.0",
          "update_time": "0000-00-00 00:00:00",
          "start_time": "19:50:00",
-         "end_time": "21:50:00",
+         "end_time": "21:50:00",
          "image_filename": "lkfjwljfljlfj.jpg",
          "image_timestamp": "11283812691",
          "disance": "1861",
@@ -89,7 +89,7 @@ Badminton API Document
          "longitude": "0.0",
          "update_time": "0000-00-00 00:00:00",
          "start_time": "19:50:00",
-         "end_time": "21:50:00",
+         "end_time": "21:50:00",
          "image_filename": "lkfjwljfljlfj.jpg",
          "image_timestamp": "11283812691",
          "disance": "1861",
@@ -532,7 +532,7 @@ Badminton API Document
 
 * **/ticket/history?passcode=[passcode]**
 	* GET
-	* sory by update_time DESC and status DESC
+	* sory by date DESC
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
