@@ -702,6 +702,7 @@ Badminton API Document
 	|202|Illegal parameter|
 	|203|Insert place fail|
 	|204|Illegal date|
+	|205|Date expire|
 
 * Image Error 3xx
 
