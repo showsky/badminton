@@ -18,6 +18,31 @@ Badminton API Document
 	```
 * Use memcached image and ticket and user data 
 
+## Server
+
+* **/server**
+	* GET
+	* Request
+	
+	```
+	GET /endpoint
+	```
+	
+	* Response
+	
+	```
+	{
+	    "status": "success",
+	    "errno": "",
+	    "errmsg": "",
+	    "data": {
+	        "api_domain": "xxxx",
+	        "images_domain": "xxx",
+	        "api_version": "v1.0.0"
+	    }
+	}
+	```
+
 ## Place
 
 * **/place**
@@ -96,7 +121,7 @@ Badminton API Document
 
 * **/place/fetch/[id]**
 	* GET
-	* sing_date range within a month
+	* sign_date range within a month
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
