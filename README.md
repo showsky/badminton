@@ -1,6 +1,8 @@
 Badminton API Document
 ===
 
+[![Join the chat at https://gitter.im/showsky/3tr](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/showsky/3tr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 * Api base URL: **https://[domain name]/api**
 * Image base URL: **https://[domain name]/images**
 * ***All response JSON format use of string type***
@@ -81,9 +83,12 @@ Badminton API Document
          "latitude": "0.0",
          "longitude": "0.0",
          "update_time": "0000-00-00 00:00:00",
+         "start_time": "19:50:00",
+         "end_time": "21:50:00",
          "image_filename": "lkfjwljfljlfj.jpg",
          "image_timestamp": "11283812691",
          "disance": "1861",
+         "datetime": "2015-05-06 19:50:00",
          "date": "2015-05-06"
       },
       {
@@ -95,9 +100,12 @@ Badminton API Document
          "latitude": "0.0",
          "longitude": "0.0",
          "update_time": "0000-00-00 00:00:00",
+         "start_time": "19:50:00",
+         "end_time": "21:50:00",
          "image_filename": "lkfjwljfljlfj.jpg",
          "image_timestamp": "11283812691",
          "disance": "1861",
+         "datetime": "2015-05-06 19:50:00",
          "date": "2015-05-06"
       },
       {
@@ -109,9 +117,12 @@ Badminton API Document
          "latitude": "0.0",
          "longitude": "0.0",
          "update_time": "0000-00-00 00:00:00",
+         "start_time": "19:50:00",
+         "end_time": "21:50:00",
          "image_filename": "lkfjwljfljlfj.jpg",
          "image_timestamp": "11283812691",
          "disance": "1861",
+         "datetime": "2015-05-06 19:50:00",
          "date": "2015-05-06"
       }
    ]
@@ -432,6 +443,8 @@ Badminton API Document
 	| name | require | default | explanation |
 	|------|------|-----|----|
 	|code|Y|-|-|
+	|name|Y|-|user name|
+	|email|N|-|-|
 	|platform|Y|-|1:Android 2:iOS|
 	|token|Y|-|GCM token|
 
@@ -518,8 +531,6 @@ Badminton API Document
 	|place_id|Y|-|
 	|date|Y|-|-|
 	|people|Y|-|-|
-	|name|Y|-|-|
-	|email|N|-|-|
 
 	* Request
 	
@@ -551,7 +562,7 @@ Badminton API Document
 
 * **/ticket/history?passcode=[passcode]**
 	* GET
-	* sory by update_time DESC and status DESC
+	* sory by date DESC
 
 	| name | require | default | explanation |
 	|------|------|-----|----|
@@ -716,6 +727,7 @@ Badminton API Document
 	|202|Illegal parameter|
 	|203|Insert place fail|
 	|204|Illegal date|
+	|205|Date expire|
 
 * Image Error 3xx
 
@@ -740,6 +752,7 @@ Badminton API Document
 	|409|SMS send phone exceeds limit|
 	|410|Illegal code|
 	|411|Insert SMS fail|
+	|412|Illegal email address|
 	
 * Ticket Error 5xx
 
