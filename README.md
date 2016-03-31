@@ -20,6 +20,13 @@ Badminton API Document
 	```
 * Use memcached image and ticket and user data 
 
+Flow Chart
+===
+
+## Bind Phone
+
+!https://github.com/showsky/3tr/blob/master/image/bind_phone.png
+
 ## Server
 
 * **/server**
@@ -27,7 +34,7 @@ Badminton API Document
 	* Request
 	
 	```
-	GET /endpoint
+	GET /server/endpoint
 	```
 	
 	* Response
