@@ -27,6 +27,10 @@ Flow Chart
 
 ![](https://github.com/showsky/3tr/blob/master/image/bind_phone.png?raw=true)
 
+## Sign Place
+
+![](https://github.com/showsky/3tr/blob/master/image/sign_place.png?raw=true)
+
 ## Server
 
 * **/server**
