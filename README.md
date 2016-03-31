@@ -25,7 +25,7 @@ Flow Chart
 
 ## Bind Phone
 
-!https://github.com/showsky/3tr/blob/master/image/bind_phone.png
+![](https://github.com/showsky/3tr/blob/master/image/bind_phone.png?raw=true)
 
 ## Server
 
