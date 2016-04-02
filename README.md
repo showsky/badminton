@@ -20,7 +20,7 @@ Badminton API Document
 	```
 * Use memcached image and ticket and user data 
 
-Flow Chart
+Chart
 ===
 
 ## Bind Phone
@@ -33,7 +33,7 @@ Flow Chart
 
 ## Server
 
-* **/server**
+* **/server/endpoint**
 	* GET
 	* Request
 	
@@ -53,6 +53,68 @@ Flow Chart
 	        "images_domain": "xxx",
 	        "api_version": "v1.0.0"
 	    }
+	}
+	```
+	
+## Report
+
+* **/report/sign/**
+	* GET
+	
+	| name | require | default | explanation |
+	|------|------|-----|----|
+	|place_id|Y|-|-|
+	|date|Y|2016-04-04|-|
+	|status|Y|-|1: 等待確定 2: 報名成功  3: 報名失敗|
+	
+	* Request
+
+	```
+	GET /report/sign?place_id=8&date=2016-04-07&status=1
+	```
+	
+	* Response
+
+	```
+	{
+	  "status": "success",
+	  "errno": "",
+	  "errmsg": "",
+	  "data": [
+	    {
+	      "name": "測試員",
+	      "email": "",
+	      "phone": "886973350015",
+	      "people": "2",
+	      "date": "2016-04-07",
+	      "time": "19:00:00",
+	      "status": "1",
+	      "update_time": "2016-03-31 16:48:50",
+	      "create_time": "2016-03-31 16:46:41"
+	    },
+	    {
+	      "name": "測試員",
+	      "email": "",
+	      "phone": "886973350015",
+	      "people": "2",
+	      "date": "2016-04-07",
+	      "time": "19:00:00",
+	      "status": "2",
+	      "update_time": "2016-03-31 16:39:49",
+	      "create_time": "2016-03-31 16:39:14"
+	    },
+	    {
+	      "name": "測試員",
+	      "email": "",
+	      "phone": "886973350015",
+	      "people": "3",
+	      "date": "2016-04-07",
+	      "time": "19:00:00",
+	      "status": "3",
+	      "update_time": "2016-03-31 16:32:57",
+	      "create_time": "2016-03-31 16:32:16"
+	    }
+	  ]
 	}
 	```
 
