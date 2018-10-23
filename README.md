@@ -43,7 +43,7 @@ Chart
 	
 	* Response
 	
-	```
+	```json
 	{
 	    "status": "success",
 	    "errno": "",
@@ -75,7 +75,7 @@ Chart
 	
 	* Response
 
-	```
+	```json
 	{
 	  "status": "success",
 	  "errno": "",
@@ -141,66 +141,65 @@ Chart
 	
 	* Response
 	
-	```
+	```json
 	{
-   "status": "success",
-   "errno": "",
-   "errmsg": "",
-   "data": [
-      {
-         "id": "1",
-         "team_name": "欣動羽球社",
-         "city": "台北",
-         "location": "東門國小",
-         "address": "台北市中正區仁愛路一段2之4號",
-         "latitude": "0.0",
-         "longitude": "0.0",
-         "update_time": "0000-00-00 00:00:00",
-         "start_time": "19:50:00",
-         "end_time": "21:50:00",
-         "image_filename": "lkfjwljfljlfj.jpg",
-         "image_timestamp": "11283812691",
-         "disance": "1861",
-         "datetime": "2015-05-06 19:50:00",
-         "date": "2015-05-06"
-      },
-      {
-         "id": "2",
-         "team_name": "采翼羽球隊",
-         "city": "台北",
-         "location": "興雅國小",
-         "address": "台北市基隆路一段83巷",
-         "latitude": "0.0",
-         "longitude": "0.0",
-         "update_time": "0000-00-00 00:00:00",
-         "start_time": "19:50:00",
-         "end_time": "21:50:00",
-         "image_filename": "lkfjwljfljlfj.jpg",
-         "image_timestamp": "11283812691",
-         "disance": "1861",
-         "datetime": "2015-05-06 19:50:00",
-         "date": "2015-05-06"
-      },
-      {
-         "id": "3",
-         "team_name": "超勝羽球隊-大安",
-         "city": "台北",
-         "location": "銘傳國小四樓羽球場",
-         "address": "台北市大安區羅斯福路四段21號",
-         "latitude": "0.0",
-         "longitude": "0.0",
-         "update_time": "0000-00-00 00:00:00",
-         "start_time": "19:50:00",
-         "end_time": "21:50:00",
-         "image_filename": "lkfjwljfljlfj.jpg",
-         "image_timestamp": "11283812691",
-         "disance": "1861",
-         "datetime": "2015-05-06 19:50:00",
-         "date": "2015-05-06"
-      }
-   ]
-}
-	
+	   "status": "success",
+	   "errno": "",
+	   "errmsg": "",
+	   "data": [
+	      {
+	         "id": "1",
+	         "team_name": "欣動羽球社",
+	         "city": "台北",
+	         "location": "東門國小",
+	         "address": "台北市中正區仁愛路一段2之4號",
+	         "latitude": "0.0",
+	         "longitude": "0.0",
+	         "update_time": "0000-00-00 00:00:00",
+	         "start_time": "19:50:00",
+	         "end_time": "21:50:00",
+	         "image_filename": "lkfjwljfljlfj.jpg",
+	         "image_timestamp": "11283812691",
+	         "disance": "1861",
+	         "datetime": "2015-05-06 19:50:00",
+	         "date": "2015-05-06"
+	      },
+	      {
+	         "id": "2",
+	         "team_name": "采翼羽球隊",
+	         "city": "台北",
+	         "location": "興雅國小",
+	         "address": "台北市基隆路一段83巷",
+	         "latitude": "0.0",
+	         "longitude": "0.0",
+	         "update_time": "0000-00-00 00:00:00",
+	         "start_time": "19:50:00",
+	         "end_time": "21:50:00",
+	         "image_filename": "lkfjwljfljlfj.jpg",
+	         "image_timestamp": "11283812691",
+	         "disance": "1861",
+	         "datetime": "2015-05-06 19:50:00",
+	         "date": "2015-05-06"
+	      },
+	      {
+	         "id": "3",
+	         "team_name": "超勝羽球隊-大安",
+	         "city": "台北",
+	         "location": "銘傳國小四樓羽球場",
+	         "address": "台北市大安區羅斯福路四段21號",
+	         "latitude": "0.0",
+	         "longitude": "0.0",
+	         "update_time": "0000-00-00 00:00:00",
+	         "start_time": "19:50:00",
+	         "end_time": "21:50:00",
+	         "image_filename": "lkfjwljfljlfj.jpg",
+	         "image_timestamp": "11283812691",
+	         "disance": "1861",
+	         "datetime": "2015-05-06 19:50:00",
+	         "date": "2015-05-06"
+	      }
+	   ]
+	}
 	```
 
 * ***/place/fetch/[id]***
@@ -219,7 +218,7 @@ Chart
 	
 	* Response
 	
-	```
+	```json
 	{
 	    "status": "success",
 	    "errno": "",
@@ -293,7 +292,7 @@ Chart
 
 	* Response
 
-	```
+	```json
 	{
 	}
 	```
@@ -334,7 +333,7 @@ Chart
 	
 	* Response
 	
-	```
+	```json
 	{
 		"status": "success",
 		"errno": "",
@@ -358,7 +357,7 @@ Chart
 	
 	* Response
 
-	```
+	```json
 	{
 	}
 	```
@@ -376,7 +375,7 @@ Chart
 
 	* Response
 
-	```
+	```json
 	{
 	}
 	```
@@ -398,7 +397,7 @@ Chart
 	
 	* Response
 
-	```
+	```json
 	{
 		"status": "success",
 		"errno": "",
@@ -439,7 +438,7 @@ Chart
 
 	* Response
 
-	```
+	```json
 	{
 		"status": "success",
 		"errno": "",
@@ -465,7 +464,7 @@ Chart
 
 	* Response
 
-	```
+	```json
 	{
 		"status": "success",
 		"errno": "",
@@ -496,7 +495,7 @@ Chart
 
 	* Response
 
-	```
+	```json
 	{
 		"status": "success,
 		"errno":"",
@@ -529,7 +528,7 @@ Chart
 
 	* Response
 
-	```
+	```json
 	{
 		"status": "success",
 		"errno": "",
@@ -556,7 +555,7 @@ Chart
 	
 	* Response
 
-	```
+	```json
 	{
 		"status": "success",
 		"errno": "",
@@ -581,7 +580,7 @@ Chart
 	
 	* Response
 	
-	```
+	```json
 	{
 		"status": "success",
 		"errno": "",
@@ -613,7 +612,7 @@ Chart
 
 	* Response
 
-	```
+	```json
 	{
 		"status": "success",
 		"errno": "",
@@ -649,7 +648,7 @@ Chart
 	
 	* Response
 	
-	```
+	```json
 	{
 	   "status": "success",
 	   "errno": "",
@@ -725,7 +724,7 @@ Chart
 	
 	* Response
 
-	```
+	```json
 	{
 	   "status": "success",
 	   "errno": "",
@@ -770,7 +769,7 @@ Chart
 	
 	* Response
 
-	```
+	```json
 	{
 		"status": "success",
 		"errno": "",
