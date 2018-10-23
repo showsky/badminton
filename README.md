@@ -52,7 +52,7 @@ Chart
 	
 	* Response
 	
-	```json
+	```
 	{
 	    "status": "success",
 	    "errno": "",
@@ -84,7 +84,7 @@ Chart
 	
 	* Response
 
-	```json
+	```
 	{
 	  "status": "success",
 	  "errno": "",
@@ -150,7 +150,7 @@ Chart
 	
 	* Response
 	
-	```json
+	```
 	{
 	   "status": "success",
 	   "errno": "",
@@ -227,7 +227,7 @@ Chart
 	
 	* Response
 	
-	```json
+	```
 	{
 	    "status": "success",
 	    "errno": "",
@@ -301,7 +301,7 @@ Chart
 
 	* Response
 
-	```json
+	```
 	{
 	}
 	```
@@ -342,7 +342,7 @@ Chart
 	
 	* Response
 	
-	```json
+	```
 	{
 		"status": "success",
 		"errno": "",
@@ -366,7 +366,7 @@ Chart
 	
 	* Response
 
-	```json
+	```
 	{
 	}
 	```
@@ -384,7 +384,7 @@ Chart
 
 	* Response
 
-	```json
+	```
 	{
 	}
 	```
@@ -406,7 +406,7 @@ Chart
 	
 	* Response
 
-	```json
+	```
 	{
 		"status": "success",
 		"errno": "",
@@ -447,7 +447,7 @@ Chart
 
 	* Response
 
-	```json
+	```
 	{
 		"status": "success",
 		"errno": "",
@@ -473,7 +473,7 @@ Chart
 
 	* Response
 
-	```json
+	```
 	{
 		"status": "success",
 		"errno": "",
@@ -504,7 +504,7 @@ Chart
 
 	* Response
 
-	```json
+	```
 	{
 		"status": "success,
 		"errno":"",
@@ -537,7 +537,7 @@ Chart
 
 	* Response
 
-	```json
+	```
 	{
 		"status": "success",
 		"errno": "",
@@ -564,7 +564,7 @@ Chart
 	
 	* Response
 
-	```json
+	```
 	{
 		"status": "success",
 		"errno": "",
@@ -589,7 +589,7 @@ Chart
 	
 	* Response
 	
-	```json
+	```
 	{
 		"status": "success",
 		"errno": "",
@@ -621,7 +621,7 @@ Chart
 
 	* Response
 
-	```json
+	```
 	{
 		"status": "success",
 		"errno": "",
@@ -657,7 +657,7 @@ Chart
 	
 	* Response
 	
-	```json
+	```
 	{
 	   "status": "success",
 	   "errno": "",
@@ -733,7 +733,7 @@ Chart
 	
 	* Response
 
-	```json
+	```
 	{
 	   "status": "success",
 	   "errno": "",
@@ -778,7 +778,7 @@ Chart
 	
 	* Response
 
-	```json
+	```
 	{
 		"status": "success",
 		"errno": "",
