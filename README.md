@@ -10,12 +10,12 @@ Badminton API Document
 * Base rsponse JSON pattern
 
 	```
-{
+	{
 		"status": [success or fail],
 		"errno": [error No],
 		"errmsg": [error Message],
 		"data": [data]
-}
+	}
 
 	```
 * Use memcached image and ticket and user data 
@@ -58,10 +58,10 @@ Chart
 	
 ## Report
 
-* **/report/sign/**
+* ***/report/sign/***
 	* GET
 	
-	| name | require | default | explanation |
+	|name|require|default|explanation|
 	|------|------|-----|----|
 	|place_id|Y|-|-|
 	|date|Y|2016-04-04|-|
@@ -120,7 +120,7 @@ Chart
 
 ## Place
 
-* **/place**
+* ***/place***
 	* GET
 	* result data end_date before
 
@@ -203,7 +203,7 @@ Chart
 	
 	```
 
-* **/place/fetch/[id]**
+* ***/place/fetch/[id]***
 	* GET
 	* sign_date range within a month
 
@@ -280,7 +280,7 @@ Chart
 	}
 	```
 	
-* **/place/search**
+* ***/place/search***
 	* GET
 
 	| name | require | default | explanation |
@@ -298,7 +298,7 @@ Chart
 	}
 	```
 
-* **/place/add**
+* ***/place/add***
 	* POST
 	
 	| name | require | default | explanation |
@@ -335,17 +335,17 @@ Chart
 	* Response
 	
 	```
-{
+	{
 		"status": "success",
 		"errno": "",
 		"errmsg": "",
 		"data": {
 			"place_id" => 12
 		}
-}
+	}
 	```
 
-* **/place/edit**
+* ***/place/edit***
 	* POST
 
 	| name | require | default | explanation |
@@ -363,7 +363,7 @@ Chart
 	}
 	```
 	
-* **/place/delete/**
+* ***/place/delete/***
 	* POST
 
 	| name | require | default | explanation |
@@ -383,7 +383,7 @@ Chart
 
 ## Image
 
-* **/image/fetch/[place id]**
+* ***/image/fetch/[place id]***
 	* GET
 
 	| name | require | default | explanation |
@@ -399,29 +399,29 @@ Chart
 	* Response
 
 	```
-{
+	{
 		"status": "success",
 		"errno": "",
 		"errmsg": "",
 		"data" : [
-    		{
-      			"filename" : "cdd41435828345612aa43758797ebe83.jpg",
-      			"timestamp" : "1436180721"
-    		},
-    		{
-      			"filename" : "0c285cda7116b339d1093a73ef66e639.jpg",
-      			"timestamp" : "1436180797"
-    		},
-    		{
-      			"filename" : "ffc8c29ac64c5764da93ef0a6535fc34.jpg",
-      			"timestamp" : "1436180797"
-    		}
-  		]
-}
+			{
+	  			"filename" : "cdd41435828345612aa43758797ebe83.jpg",
+	  			"timestamp" : "1436180721"
+			},
+			{
+	  			"filename" : "0c285cda7116b339d1093a73ef66e639.jpg",
+	  			"timestamp" : "1436180797"
+			},
+			{
+	  			"filename" : "ffc8c29ac64c5764da93ef0a6535fc34.jpg",
+	  			"timestamp" : "1436180797"
+			}
+		]
+	}
 	```
 	
 
-* **/image/upload/[place id]**
+* ***/image/upload/[place id]***
 	* POST
 	* image max limit 3, and must JPG type
 	* image size limit 300kb
@@ -440,17 +440,17 @@ Chart
 	* Response
 
 	```
-{
+	{
 		"status": "success",
 		"errno": "",
 		"errmsg": "",
 		"data": {
 			"place_id" => 12
 		}
-}
+	}
 	```
 
-* **/image/delete**
+* ***/image/delete***
 	* POST
 
 	| name | require | default | explanation |
@@ -466,19 +466,19 @@ Chart
 	* Response
 
 	```
-{
+	{
 		"status": "success",
 		"errno": "",
 		"errmsg": "",
 		"data": {
 			"filename" => "qwkldfjoqwjflqwjlf.jpg"
 		}
-}
+	}
 	```
 
 ## User
 	
-* **/user/send**
+* ***/user/send***
 	* POST
 	* phone number must 10 length and first char is 0
 	* Inspect send sms ip daily max 50
@@ -508,7 +508,7 @@ Chart
 	```
 
 
-* **/user/bind**
+* ***/user/bind***
 	* POST
 	* passcode string length = 40
 	* the code only bind only once
@@ -540,7 +540,7 @@ Chart
 	}
 	```
 	
-* **/user/update?passcode=[passcode]**
+* ***/user/update?passcode=[passcode]***
 	* POST
 
 	| name | require | default | explanation |
@@ -567,7 +567,7 @@ Chart
 	}
 	```
 	
-* **/user/check?passcode=[passcode]**
+* ***/user/check?passcode=[passcode]***
 	* GET
 	
 	| name | require | default | explanation |
@@ -596,7 +596,7 @@ Chart
 
 ## Ticket
 
-* **/ticket/sign?passcode=[passcode]**
+* ***/ticket/sign?passcode=[passcode]***
 	* POST
 
 	| name | require | default | explanation |
@@ -633,7 +633,7 @@ Chart
 	}
 	```
 
-* **/ticket/history?passcode=[passcode]**
+* ***/ticket/history?passcode=[passcode]***
 	* GET
 	* sory by date DESC
 
@@ -710,7 +710,7 @@ Chart
 	}
 	```
 
-* **/ticket/check?code=[code]
+* ***/ticket/check?code=[code]***
 	* GET
 	
 	| name | require | default | explanation |
@@ -752,7 +752,7 @@ Chart
 	   }
 	}
 	```
-* **/ticket/confirm?code=[code]
+* ***/ticket/confirm?code=[code]***
 	* POST
 	* the code only bind only once
 	
