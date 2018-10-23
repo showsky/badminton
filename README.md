@@ -18,18 +18,27 @@ Badminton API Document
 	}
 
 	```
-* Use memcached image and ticket and user data 
+* Use memcached image and ticket and user data
+
+
+Screen
+===
+
+<img src="android_screenshot/map_mode.png" width="40%">
+
+<img src="android_screenshot/history.png" width="40%"> <img src="android_screenshot/list_mode.png" width="40%">
+
 
 Chart
 ===
 
 ## Bind Phone
 
-![](https://github.com/showsky/3tr/blob/master/image/bind_phone.png?raw=true)
+<img src="image/bind_phone.png" width="70%">
 
 ## Sign Place
 
-![](https://github.com/showsky/3tr/blob/master/image/sign_place.png?raw=true)
+<img src="image/sign_place.png" width="70%">
 
 ## Server
 
